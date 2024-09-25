@@ -1,0 +1,47 @@
+.sign-in,
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    margin: 10px 0;
+    width: auto;
+    border: 1px solid #ce5a67;
+    border-radius: 4px;
+    background-color: #fcf5ed;
+}
+
+legend {
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sign-in-item,
+.sign-up-item {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+input {
+    border: 1px solid #ce5a67;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 5px 20px;
+}
+
+.remember-me {
+    margin-left: 5%;
+}
+
+.submit-button {
+    background-color: #F4BF96;
+    color: #1F1717;
+    cursor: pointer;
+    border: 1px solid #ce5a67;
+    width: 50%;
+    font-weight: bold;
+}

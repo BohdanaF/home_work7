@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../styles/form.css">
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>Реєстрація</legend>
+
+        <div class="sign-in">
+
+            <div class="sign-in-item">
+                <label for="email"><b>Email</b></label>
+                <input id="email" type="text" placeholder="user@gmail.com" name="email" required>
+            </div>
+            <div class="sign-in-item">
+                <label for="psw"><b>Password</b></label>
+                <input id="psw" type="password" placeholder="enter password" name="psw" required>
+            </div>
+            <div class="sign-in-item">
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input id="psw-repeat" type="password" placeholder="repeat password" name="psw-repeat" required>
+            </div>
+            <input id="redirect-btn" type="submit" class="submit-button" value="Зареєструватися">
+
+        </div>
+
+    </fieldset>
+
+</form>
+
+<script src="../scripts/redirect.js"></script>
+
+</body>
+</html>
