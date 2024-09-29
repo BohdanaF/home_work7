@@ -1,0 +1,108 @@
+.filter-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.body-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.body-type-choice {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+
+.color-choice {
+    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0);
+    border: 1px solid #b3b3b3;
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+    margin: 0 .5rem .5rem 0;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.green {
+    background-color: green;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+
+
+.button:active,
+.active {
+    border: 1px solid #008000;
+    box-shadow: 0px 0px 3px 0px rgb(0, 128, 0);
+
+}
+
+
+option {
+    display: block;
+}
+
+.wind {
+    background-color: #fcf5ed;
+    display: flex;
+    flex-direction: row;
+}
