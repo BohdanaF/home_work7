@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Main page</title>
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main-page.css">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
 <div class="main-wrapper">
-    <header>
-        <ul class="nav">
-            <li class="nav_item">
-                <a href="index.html" class="nav_link">Головна</a>
-            </li>
-            <li class="nav_item">
-                <a href="pages/filter.html" class="nav_link">Фільтр</a>
-            </li>
-            <li class="nav_item">
-                <a href="pages/authorization.html" class="nav_link">Вхід</a>
-            </li>
-            <li class="nav_item">
-                <a href="#" class="nav_link"></a>
-            </li>
-        </ul>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="icons/logo.png" alt="logo" class="logo-img">
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="nav_item">
+                    <a href="index.html" class="nav_link">Головна</a>
+                </li>
+                <li class="nav_item">
+                    <a href="pages/filter.html" class="nav_link">Фільтр</a>
+                </li>
+                <li class="nav_item">
+                    <a href="pages/authorization.html" class="nav_link">Вхід</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
 
     <div class="products-wrapper">
 
-
         <div class="product">
-
             <a href="" class="product__link">
 
                 <img src="images/audi.webp" alt="Audi A6" class="product__image">
@@ -432,5 +437,10 @@
 
     </div>
 </div>
+
+<footer class="footer">
+    <p class="footer__copyright">© 2021 Bohdana. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign in</title>
+    <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/form.css">
 </head>
 <body>
+<div class="page-wrap">
 
+<div class="logo">
+    <a href="#">
+        <img src="../icons/logo.png" alt="logo" class="logo-img">
+    </a>
+</div>
 
-<form>
+<form method="post" action="https://fom.in.ua/echo">
 
-    <fieldset>
+    <fieldset class="sing">
         <legend>Авторизація</legend>
 
         <div class="sign-up">
@@ -28,7 +35,7 @@
             <input type="checkbox" name="remember" value="remember" id="remember">
             <label for="remember">Remember me</label>
             <br>
-            <span><b>Немає акаунту?<a href="registration.html">Зареєструватись.</a></b></span>
+            <span><b>Немає акаунту? <a href="registration.html">Зареєструватись.</a></b></span>
         </div>
 
         <div class="sign-up">
@@ -37,9 +44,9 @@
 
     </fieldset>
 </form>
+</div>
 
-
-
+<script src="../scripts/redirect.js"></script>
 
 </body>
 </html>

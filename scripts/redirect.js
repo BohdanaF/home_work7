@@ -1,9 +1,9 @@
-const goToFormButton = document.querySelector("#redirect-btn");
+const form = document.querySelector("form");
 
-goToFormButton.addEventListener("click", function (e) {
+form.addEventListener("submit", (e) => {
     e.preventDefault();
-    window.location.href = '/home_work7/index.html';
+    window.location.href = '../index.html';
+})
 
-});
 
 

@@ -1,3 +1,29 @@
+body {
+    background-image: url("../icons/header-img.jpg");
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.page-wrap {
+    display: flex;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+
+form {
+    width: 100%;
+}
+
+legend {
+    color: #1f1717;
+    background-color: #f4bf96;
+}
+
 .sign-in,
 .sign-up {
     display: flex;
@@ -44,4 +70,8 @@ input {
     border: 1px solid #ce5a67;
     width: 50%;
     font-weight: bold;
+}
+
+span a {
+    color: #ce5a67;
 }
