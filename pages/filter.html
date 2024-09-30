@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../styles/filter.css">
 </head>
 <body>
+
 <div class="filter-wrap">
-
-
     <form method="post" action="https://fom.in.ua/echo">
+        <fieldset class="background">
+            <legend>Фільтр</legend>
         <fieldset>
             <!--Vehicle type-->
+            <span>Тип кузова</span>
             <div class="body-type">
-
                 <button name="cabriolet" type="button" class="body-type-choice" value="Cabriolet">
                     <img src="../icons/cabriolet.webp" alt="Cabriolet">
                     Кабріолет
@@ -49,10 +50,8 @@
             </div>
 
             <!--Make-->
+            <span>Марка авто</span>
             <div class="make">
-                <label for="make">
-                    Марка авто
-                </label>
                 <select name="make" id="make">
                     <option value="makes">Оберіть марку</option>
                     <option value="audi">Audi</option>
@@ -78,10 +77,8 @@
                 </select>
             </div>
             <!--Countries-->
-            <div>
-                <label for="countries">
-                    Країна виробник
-                </label>
+            <span>Країна виробник</span>
+            <div class="countries">
                 <select name="countries" id="countries">
                     <option value="countries">Оберіть країну</option>
                     <option value="australia">Австралія</option>
@@ -141,8 +138,8 @@
             </div>
 
             <!--REGISTRATION-->
+            <span>Рік</span>
             <div class="registration">
-                <label>Рік</label>
                 <select id="year-from">
                     <option value="0">Рік, від</option>
                     <option value="2024">2024</option>
@@ -404,13 +401,14 @@
 
         <fieldset>
             <!--PRICE (USD)-->
+            <span>Вартість</span>
             <div class="price">
-                <label>Вартість</label>
                 <input type="number" id="at_price-from" placeholder="Від" class="elem">
                 <input type="number" id="at_price-to" placeholder="До" class="elem">
             </div>
 
             <!--COLOR-->
+            <span>Колір</span>
             <div class="color">
                 <button type="button" class="color-choice black"></button>
                 <button type="button" class="color-choice white"></button>
@@ -423,29 +421,27 @@
                 <button type="button" class="color-choice red"></button>
                 <button type="button" class="color-choice yellow"></button>
             </div>
-
-
         </fieldset>
 
         <fieldset>
-            <div>
-                <div>
-                    Участь в ДТП
+            <div class="condition">
+                <span>Участь в ДТП</span>
+                <div class="condition-item">
                     <input type="radio" name="accident" value="show">Показувати
                     <input type="radio" name="accident" value="hide">Сховати
                 </div>
-                <div>
-                    Не розмитнені
+                <span>Не розмитнені</span>
+                <div class="condition-item">
                     <input type="radio" name="not-cleared" value="show">Показувати
                     <input type="radio" name="not-cleared" value="hide">Сховати
                 </div>
-                <div>
-                    В кредиті
+                <span>В кредиті</span>
+                <div class="condition-item">
                     <input type="radio" name="credit" value="show">Показувати
                     <input type="radio" name="credit" value="hide">Сховати
                 </div>
-                <div>
-                    Конфіскат
+                <span>Конфіскат</span>
+                <div class="condition-item">
                     <input type="radio" name="confiscation" value="show">Показувати
                     <input type="radio" name="confiscation" value="hide">Сховати
                 </div>
@@ -453,8 +449,8 @@
         </fieldset>
 
         <fieldset>
+            <span>Тип палива</span>
             <div class="container-fuel-type">
-                <span>Тип палива</span>
                 <div class="type-of-fuel">
                     <input type="checkbox" id="gasoline" name="fuel-type" value="gasoline">
                     <label for="gasoline">Бензин</label>
@@ -489,8 +485,8 @@
                 </div>
             </div>
 
+            <span>Тип коробки передач</span>
             <div class="container-gearbox">
-                <span>Тип коробки передач</span>
                 <div class="gearbox-type">
                     <input type="checkbox" id="amt" name="gearbox" value="AMT">
                     <label for="amt">Ручна / Механіка</label>
@@ -515,8 +511,8 @@
         </fieldset>
 
         <fieldset>
+            <span>Матеріали салону</span>
             <div class="additional-container">
-                <label for="interior-material">Матеріали салону</label>
                 <select multiple="multiple" name="InteriorMaterial" id="interior-material">
                     <option value="Cloth">Тканина</option>
                     <option value="Leather">Шкіра</option>
@@ -524,23 +520,24 @@
                     <option value="Combined">Комбінований</option>
                 </select>
             </div>
+
+            <span>Колір салону</span>
             <div class="additional-container">
-                <label for="interior-color">Колір салону</label>
                 <select multiple="multiple" name="InteriorColor" id="interior-color">
                     <option value="Light">Світлий</option>
                     <option value="Dark">Темний</option>
                     <option value="Brown">Коричневий</option>
                 </select>
             </div>
+            <span>Підігрів сидінь</span>
             <div class="additional-container">
-                <label for="seat-heating">Підігрів сидінь</label>
                 <select multiple="multiple" name="SeatHeating" id="seat-heating">
                     <option value="Front seats">Передні сидіння</option>
                     <option value="Front and rear seats">Передні та задні сидіння</option>
                 </select>
             </div>
+            <span>Електро скло підйомники</span>
             <div class="additional-container">
-                <label for="electric-glass-lifts">Електро скло підйомники</label>
                 <select multiple="multiple" name="ElectricGlassLifts" id="electric-glass-lifts">
                     <option value="Front">Передні</option>
                     <option value="Front and rear">Передні та задні</option>
@@ -550,7 +547,7 @@
         </fieldset>
 
         <input type="submit" class="submit-button" value="Знайти">
-
+            </fieldset>
     </form>
 
 </div>

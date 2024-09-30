@@ -1,6 +1,7 @@
 body {
     background-color: #fcf5ed;
 }
+
 .header {
     background-image: url("../icons/header-img.jpg");
     height: 50vh;
@@ -49,10 +50,6 @@ body {
     justify-content: space-evenly;
 }
 
-p {
-    padding: 2px;
-}
-
 .product {
     padding: 8px;
     margin: 2px;
@@ -61,7 +58,7 @@ p {
 }
 
 .product:hover {
-    box-shadow: 0px 0px 3px 0px rgb(31, 23, 23);
+    box-shadow: 0 0 3px 0 rgb(31, 23, 23);
     background-color: #f4bf96;
 }
 
@@ -72,5 +69,5 @@ p {
 .footer {
     margin-top: 10px;
     background-color: #fcf5ed;
-    box-shadow: 0px 0px 3px 0px rgb(206, 90, 103);
+    box-shadow: 0 0 3px 0 rgb(206, 90, 103);
 }
