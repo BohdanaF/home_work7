@@ -15,35 +15,35 @@
             <!--Vehicle type-->
             <span>Тип кузова</span>
             <div class="body-type">
-                <button name="cabriolet" type="button" class="body-type-choice" value="Cabriolet">
+                <button type="button" class="body-type-choice" value="Cabriolet">
                     <img src="../icons/cabriolet.webp" alt="Cabriolet">
                     Кабріолет
                 </button>
-                <button type="button" class="body-type-choice">
+                <button type="button" class="body-type-choice" value="Coupe">
                     <img src="../icons/coupe.webp" alt="Coupe">
                     Купе
                 </button>
-                <button type="button" class="body-type-choice">
+                <button type="button" class="body-type-choice" value="Estate car">
                     <img src="../icons/estate.webp" alt="Estate car">
                     Універсал
                 </button>
-                <button type="button" class="body-type-choice">
+                <button type="button" class="body-type-choice" value="Hatchback">
                     <img src="../icons/hatchback.webp" alt="Hatchback">
                     Хетчбек
                 </button>
-                <button type="button" class="body-type-choice">
+                <button type="button" class="body-type-choice" value="Pick-up">
                     <img src="../icons/pick-up.webp" alt="Pick-up">
                     Пікап
                 </button>
-                <button type="button" class="body-type-choice">
+                <button type="button" class="body-type-choice" value="Sedan">
                     <img src="../icons/sedan.webp" alt="Sedan">
                     Седан
                 </button>
-                <button type="button" class="body-type-choice">
+                <button type="button" class="body-type-choice" value="SUV / Off-road">
                     <img src="../icons/suv.webp" alt="SUV / Off-road">
                     Позашляховик
                 </button>
-                <button type="button" class="body-type-choice">
+                <button type="button" class="body-type-choice" value="Van">
                     <img src="../icons/van.webp" alt="Van">
                     Мінівен
                 </button>
@@ -403,23 +403,23 @@
             <!--PRICE (USD)-->
             <span>Вартість</span>
             <div class="price">
-                <input type="number" id="at_price-from" placeholder="Від" class="elem">
-                <input type="number" id="at_price-to" placeholder="До" class="elem">
+                <input type="number" name="priceFrom" id="at_price-from" placeholder="Від" class="elem">
+                <input type="number" name="priceTo" id="at_price-to" placeholder="До" class="elem">
             </div>
 
             <!--COLOR-->
             <span>Колір</span>
             <div class="color">
-                <button type="button" class="color-choice black"></button>
-                <button type="button" class="color-choice white"></button>
-                <button type="button" class="color-choice blue"></button>
-                <button type="button" class="color-choice brown"></button>
-                <button type="button" class="color-choice green"></button>
-                <button type="button" class="color-choice grey"></button>
-                <button type="button" class="color-choice orange"></button>
-                <button type="button" class="color-choice purple"></button>
-                <button type="button" class="color-choice red"></button>
-                <button type="button" class="color-choice yellow"></button>
+                <button type="button" class="color-choice black" value="black"></button>
+                <button type="button" class="color-choice white" value="white"></button>
+                <button type="button" class="color-choice blue" value="blue"></button>
+                <button type="button" class="color-choice brown" value="brown"></button>
+                <button type="button" class="color-choice green" value="green"></button>
+                <button type="button" class="color-choice grey" value="grey"></button>
+                <button type="button" class="color-choice orange" value="orange"></button>
+                <button type="button" class="color-choice purple" value="purple"></button>
+                <button type="button" class="color-choice red" value="red"></button>
+                <button type="button" class="color-choice yellow" value="yellow"></button>
             </div>
         </fieldset>
 
@@ -432,8 +432,8 @@
                 </div>
                 <span>Не розмитнені</span>
                 <div class="condition-item">
-                    <input type="radio" name="not-cleared" value="show">Показувати
-                    <input type="radio" name="not-cleared" value="hide">Сховати
+                    <input type="radio" name="notCleared" value="show">Показувати
+                    <input type="radio" name="notCleared" value="hide">Сховати
                 </div>
                 <span>В кредиті</span>
                 <div class="condition-item">
@@ -452,35 +452,35 @@
             <span>Тип палива</span>
             <div class="container-fuel-type">
                 <div class="type-of-fuel">
-                    <input type="checkbox" id="gasoline" name="fuel-type" value="gasoline">
+                    <input type="checkbox" id="gasoline" name="fuelType" value="gasoline">
                     <label for="gasoline">Бензин</label>
                 </div>
                 <div class="type-of-fuel">
-                    <input type="checkbox" id="gas" name="fuel-type" value="gas">
+                    <input type="checkbox" id="gas" name="fuelType" value="gas">
                     <label for="gas">Газ</label>
                 </div>
                 <div class="type-of-fuel">
-                    <input type="checkbox" id="lpg" name="fuel-type" value="lpg">
+                    <input type="checkbox" id="lpg" name="fuelType" value="lpg">
                     <label for="lpg">Газ пропан бутан / Бензин</label>
                 </div>
                 <div class="type-of-fuel">
-                    <input type="checkbox" id="hev" name="fuel-type" value="hev">
+                    <input type="checkbox" id="hev" name="fuelType" value="hev">
                     <label for="hev">Гібридн (HEV)</label>
                 </div>
                 <div class="type-of-fuel">
-                    <input type="checkbox" id="phev" name="fuel-type" value="phev">
+                    <input type="checkbox" id="phev" name="fuelType" value="phev">
                     <label for="phev">Гібрид(PHEV)</label>
                 </div>
                 <div class="type-of-fuel">
-                    <input type="checkbox" id="mhev" name="fuel-type" value="mhev">
+                    <input type="checkbox" id="mhev" name="fuelType" value="mhev">
                     <label for="mhev">Гібрид(MHEV)</label>
                 </div>
                 <div class="type-of-fuel">
-                    <input type="checkbox" id="diesel" name="fuel-type" value="diesel">
+                    <input type="checkbox" id="diesel" name="fuelType" value="diesel">
                     <label for="diesel">Дизель</label>
                 </div>
                 <div class="type-of-fuel">
-                    <input type="checkbox" id="electro" name="fuel-type" value="electro">
+                    <input type="checkbox" id="electro" name="fuelType" value="electro">
                     <label for="electro">Електро</label>
                 </div>
             </div>
@@ -549,18 +549,9 @@
         <input type="submit" class="submit-button" value="Знайти">
             </fieldset>
     </form>
-
 </div>
 
-
-<script>
-    const buttons = document.querySelectorAll('button');
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', () => {
-            buttons[i].classList.toggle('active');
-        });
-    }
-</script>
+<script src="../scripts/filter.js"></script>
 
 </body>
 </html>
